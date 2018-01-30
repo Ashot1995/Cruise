@@ -1,0 +1,823 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../icons-fonts/icomoon.eot?q2e0v6');
+    src: url('../icons-fonts/icomoon.eot?q2e0v6#iefix') format('embedded-opentype'),
+    url('../icons-fonts/icomoon.ttf?q2e0v6') format('truetype'),
+    url('../icons-fonts/icomoon.woff?q2e0v6') format('woff'),
+    url('../icons-fonts/icomoon.svg?q2e0v6#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-thin-right:before {
+    content: "\e901";
+}
+.icon-chevron-thin-down:before {
+    content: "\e900";
+}
+.icon-phone:before {
+    content: "\e942";
+}
+.icon-envelop:before {
+    content: "\e945";
+}
+.icon-calendar:before {
+    content: "\e953";
+}
+.icon-quotes-left:before {
+    content: "\e977";
+}
+.icon-quotes-right:before {
+    content: "\e978";
+}
+.icon-search:before {
+    content: "\e986";
+}
+.icon-facebook:before {
+    content: "\ea90";
+}
+.icon-facebook2:before {
+    content: "\ea91";
+}
+.icon-instagram:before {
+    content: "\ea92";
+}
+.icon-twitter:before {
+    content: "\ea96";
+}
+.icon-pinterest2:before {
+    content: "\ead2";
+}
+
+/*//////////////*/
+#search-input {
+    display: none;
+    /*position: absolute;*/
+}
+
+/*//////////////////////*/
+@font-face {
+    font-family: 'Frutiger-bold';
+    src: url('../fonts/Frutiger-Bold.eot');
+    src: url('../fonts/Frutiger-Bold.woff');
+    src: url('../fonts/Frutiger-Bold.ttf');
+    src: url('../fonts/Frutiger-Bold.svg');
+}
+
+@font-face {
+    font-family: 'Frutiger-italic';
+    src: url('../fonts/FrutigerFC-Italic.eot');
+    src: url('../fonts/FrutigerFC-Italic.woff');
+    src: url('../fonts/FrutigerFC-Italic.ttf');
+    src: url('../fonts/FrutigerFC-Italic.svg');
+    src: url('../fonts/FrutigerFC-Italic.otf');
+}
+
+@font-face {
+    font-family: 'FrutigerLTStd';
+    src: url('../fonts/FrutigerLTStd-Bold.eot');
+    src: url('../fonts/FrutigerLTStd-Bold.woff');
+    src: url('../fonts/FrutigerLTStd-Bold.ttf');
+    src: url('../fonts/FrutigerLTStd-Bold.svg');
+    src: url('../fonts/FrutigerLTStd-Bold.otf');
+}
+
+.position-rel {
+    position: relative;
+}
+.left-arrow{
+    transform: rotate(180deg)!important;
+    margin-top:-2.5%;
+}
+.slider-arrows{
+    font-size:60px;
+    color:#fff;
+    text-shadow: 1px 2px #ccc;
+}
+/*////////////////////////////*/
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.header-top {
+    background: #0e2235;
+    /*padding:10px 0;*/
+}
+
+.logo {
+    padding: 2% 0;
+}
+
+.slogan {
+    font-family: Frutiger-italic;
+    color: #fff;
+    margin: 0;
+}
+
+.phone {
+    color: #314253;
+    border: 2px solid #314253;
+    border-radius: 50%;
+    padding: 2%;
+    font-size: 30px;
+    position: relative;
+}
+
+.call {
+    color: #fff;
+    font-family: FrutigerLTStd;
+    font-size: 22px;
+    position: absolute;
+    /*right: 37.5%;*/
+    transform: translateX(50%);
+}
+
+.phone-numbers {
+    line-height: 1;
+    margin-left: 35px;
+
+}
+
+.phone-numbers a {
+    color: #fff;
+}
+
+.make {
+    font-family: FrutigerLTStd;
+    color: #fff;
+    background: #0db7bb;
+    padding: 20px 30px;
+    font-size: 22px;
+}
+
+.make:hover, .search:hover {
+    color: #fff;
+}
+
+.search {
+    color: #fff;
+    font-size: 22px;
+    padding: 0 25px;
+    cursor: pointer;
+}
+
+.header-menu {
+    background: linear-gradient(to right, #eeeeee, #e6ebf0, #c4d1de);
+    height: 68px
+}
+
+.header-menu > nav {
+    height: 100%;
+}
+
+.header-menu nav ul li a {
+    color: #000;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.header-menu nav ul li {
+    border-bottom: 2px solid transparent
+}
+
+.header-menu nav ul li:hover {
+    border-bottom: 2px solid #5ccbcd;
+}
+
+.header-content {
+    background: url("../images/bg.jpg") no-repeat;
+    min-height: 500px;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.date {
+    color: #0db7bb;
+    font-family: FrutigerLTStd;
+    font-size: 18px;
+}
+
+.header-big-text {
+    font-size: 53px;
+    font-family: FrutigerLTStd;
+    margin-bottom: 3%;
+}
+
+.find-out-more {
+    color: #fff;
+    background: #0db7bb;
+    padding: 15px 20px;
+    font-size: 20px;
+}
+
+.header-slide-text {
+    padding-top: 70px;
+}
+
+.info {
+    background: #fafafa;
+    padding-bottom: 35px;
+}
+
+.search-block {
+    background: #fff;
+    border: 1px solid #ccc;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.package-search-btn {
+    color: #fff;
+    background: #0e2235;
+    transform: translateY(-50%);
+    padding: 20px 45px;
+    font-size: 18px;
+    border-left: 2px solid #0db7bb
+}
+
+.package-search-btn:hover {
+    color: #fff;
+}
+
+.only-search-btn {
+    transform: translateX(120%) translateY(-50%);
+    color: #59758f;
+    background: #ededed;
+    padding: 20px 35px;
+    font-size: 18px;
+}
+
+.only-search-btn:hover {
+    color: #59758f;
+}
+
+.search-info {
+    padding-left: 20px;
+    margin: 0;
+    height: 100%
+
+}
+
+.search-info > label, .search-info > input, .search-info > select {
+    margin-right: 15px;
+    height: 55px;
+    border-radius: 0;
+    margin-bottom: 0;
+    /*font-size:18px;*/
+}
+
+.calendar-block {
+    position: relative;
+}
+
+.calendar-block a {
+    color: #97989a;
+}
+
+.search-info > .calendar-block > input[type="text"] {
+    height: 100%;
+    border-radius: 0;
+    width: 200px;
+}
+
+.calendar {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(50%);
+    right: 15px;
+}
+
+.search-now {
+    color: #fff;
+    background: #0db7bb;
+    border: 0;
+    box-shadow: none;
+    padding: 20px 42px;
+    width: 100%;
+}
+
+.search-block-phone, .search-block-phone span a {
+    color: #919294;
+    font-family: FrutigerLTStd;
+}
+
+.or {
+    border: 0.5px solid #b5b6b7;
+    border-radius: 50%;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    font-family: Frutiger-bold;
+    margin-right: 15px;
+}
+
+.search-call {
+    font-size: 22px;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+}
+
+.search-block-phone-icon {
+    position: relative;
+    font-size: 55px;
+    color: #f9f9fa;
+    border: 5px solid #f9f9fa;
+    border-radius: 50%;
+    padding: 5%;
+}
+
+.search-block-margin {
+    margin-top: 80px;
+    margin-bottom: 45px;
+}
+
+.travel-place {
+    font-size: 53px;
+    color: #2e5172;
+    font-family: FrutigerLTStd;
+}
+
+.travel-place-one-block {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    height: 100%;
+}
+
+.place-link {
+    color: #fff;
+    font-size: 18px;
+    background: #0e2235;
+    font-family: FrutigerLTStd;
+    padding: 2%;
+    margin-top: -5%;
+}
+
+.place-link:hover, .partners-link:hover {
+    color: #fff;
+}
+
+.travel-place-one-block h5 {
+    font-size: 24px;
+    font-family: FrutigerLTStd;
+    padding-top: 30px;
+}
+
+.place-info {
+    width: 95%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.read-more {
+    font-size: 15px;
+    color: #0db7bb;
+    margin: 35px 0;
+    font-family: FrutigerLTStd;
+}
+
+.bucket-list {
+    background: #fff;
+    margin-top: 35px;
+}
+
+.buckets {
+    font-size: 53px;
+    font-family: FrutigerLTStd;
+    color: #0f3960;
+}
+
+.buckets-unique-journey {
+    font-family: FrutigerLTStd;
+    font-size: 18px;
+    color: #0db7bb;
+}
+
+.tab-item {
+    background: #fafafa;
+    border-left: 1px solid #ebebeb;
+
+}
+
+.tab-item-read-more {
+    background: #0db7bb;
+    color: #fff;
+    font-family: FrutigerLTStd;
+    padding: 20px 45px;
+}
+
+.tab-item a {
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #0f3960;
+    padding: 30px 25px;
+}
+
+.phone-numbers-tab {
+    margin-left: 25px;
+
+}
+
+.phone-numbers-tab a {
+    font-size: 14.93px;
+    color: #0f3960;
+    font-family: FrutigerLTStd;
+
+}
+
+.slider-call {
+    color: #0f3960;
+    font-family: FrutigerLTStd;
+    font-size: 18.25px;
+}
+
+.music-cruises-title {
+    font-size: 36px;
+    color: #0f3960;
+    font-family: FrutigerLTStd;
+}
+
+.price {
+    color: #0db7bb;
+    font-size: 20px;
+    font-family: FrutigerLTStd;
+}
+
+.music-cruise-descrip {
+    font-size: 14.93px;
+    /*font-family: Frutiger-bold;*/
+}
+
+.slider-text-block {
+    height: 100%;
+    padding: 40px
+}
+
+.slick-slide img {
+    height: 100%;
+}
+
+.slider-blocks-margin {
+    width: 1000px;
+    background: #fff;
+    margin: 0 20px;
+}
+
+.border-right {
+    border-right: 1px solid #f1f1f1;
+}
+
+.slider-for-tabs {
+    background: #fafafa;
+    padding-top: 65px
+}
+
+.slick-dots li button:before {
+    font-size: 15px;
+}
+
+.tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+    background: #0db7bb;
+    color: #fff;
+    font-family: FrutigerLTStd;
+    border-radius: 3px;
+    border: none;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.slick-dots li button {
+    opacity: 0;
+}
+
+/*customers*/
+.customers {
+    margin-bottom: 55px;
+}
+
+.customer-review {
+    padding-top: 100px;
+    background: #fff;
+}
+
+.customer-review h3 {
+    color: #0f3960;
+    font-size: 53px;
+    font-family: FrutigerLTStd;
+}
+
+.past-passangers {
+    color: #6dcbce;
+    font-size: 18px;
+    font-family: FrutigerLTStd;
+}
+
+.quotes {
+    color: #6dcbce;
+    padding:0 10px;
+}
+
+.customer-image-block {
+    display: flex;
+}
+
+.about-customer {
+    margin-left: 20px;
+}
+
+.about-customer p {
+    margin: 0;
+    color: #0f3960;
+    font-size: 18px;
+    font-family: FrutigerLTStd;
+
+}
+
+.customer-prof {
+    font-family: Frutiger-italic;
+}
+
+.partners {
+    border-top: 1px solid #ccc;
+}
+
+.partners img {
+    padding: 45px 0;
+}
+
+.partners-link {
+    color: #fff;
+    font-size: 18px;
+    background: #0e2235;
+    font-family: FrutigerLTStd;
+    padding: 15px 18px;
+    position: absolute;
+    transform: translateY(-50%) translateX(50%);
+    left: 75px;
+}
+
+/*subscribe*/
+.subscribe-block {
+    background: #00afb9;
+    color: #fff;
+
+}
+
+input[value=subscribe] {
+    background: #0f3960;
+    border: 0;
+    color: #fff;
+    font-family: FrutigerLTStd;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.subscribe-form {
+    height: 100%;
+}
+
+.slick-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #0f3960;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.slick-prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #0f3960;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.newsletters {
+    font-size: 53px;
+    font-family: FrutigerLTStd;
+}
+
+.padding-top-subscribe {
+    padding-top: 70px;
+}
+
+.subscribe-form input[type=email] {
+    padding: 30px 0;
+    font-size: 20px
+}
+
+.subscribe-form span {
+    margin-top: 25px;
+}
+
+/**/
+.engage {
+    background: #fff;
+}
+
+.engage-title {
+    font-size: 53px;
+    color: #0f3960;
+    padding-top: 40px;
+    font-family: FrutigerLTStd;
+}
+
+.padding {
+    padding: 65px 0;
+}
+
+.fb-like {
+    background: #4867b7;
+    color: #fff;
+    padding: 7px;
+    font-family: FrutigerLTStd;
+    font-size: 20px;
+    margin-right: 35px;
+}
+
+.instagram {
+    color: #0f3960;
+    font-family: FrutigerLTStd;
+    font-size: 31.54px;
+}
+
+.perfect-cruise {
+    background: url("../images/Celebrity.jpg") no-repeat fixed;
+    background-size: cover;
+
+
+}
+
+.find-else {
+    background: #fff;
+    padding: 0 55px 45px 55px;
+    margin: 45px 0;
+    position: relative;
+}
+
+.find-else > .find-out-more {
+    position: absolute;
+    transform: translateY(-50%) translateX(-13%);
+}
+
+.else-search-info {
+    margin: 0;
+    height: 100%;
+}
+
+.input-select {
+    margin: 10px 0 0;
+}
+
+.else-search-info-i-s {
+    height: 55px;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.else-search-info-i-s > input[type="text"] {
+    height: 100%;
+    font-size: 18px;
+}
+
+.more-info-block {
+    background: #fafafa;
+}
+
+.need-more-info {
+    font-size: 33px;
+    color: #0f3960;
+    font-family: FrutigerLTStd;
+    padding: 45px 0 35px;
+
+}
+.more-info-read{
+    margin:20px 0;
+}
+
+.one-info {
+    background: #fff;
+    border: 1px solid #ccc;
+    height: 100%;
+    padding: 35px 25px;
+}
+
+.one-info h4 {
+    font-size: 24px;
+    color: #0f3960;
+    font-family: FrutigerLTStd;
+    margin: 0;
+}
+
+.get-in-touch {
+    border-top: 1px solid #fff;
+    padding-bottom:75px;
+    margin-top:65px;
+}
+.info-about-cruise{
+    padding-top:45px;
+}
+
+.info-about-cruise>columns>.engage-title{
+    padding-top: 0;
+}
+
+.address{
+    color:#0f3960;
+    font-size:18px;
+    font-family: FrutigerLTStd;
+}
+.get-in-link{
+    color:#fff;
+    background: #0db7bb;
+    padding:20px 30px;
+    transform: translateY(-50%);
+    font-family:FrutigerLTStd;
+    font-size:18px;
+}
+/*footer block start*/
+footer{
+    background: #0e2235;
+}
+.footer-top-menu{
+    border-bottom:1px solid #ccc;
+    padding:5px 0;
+}
+.footer-menu li a,.copyright,.terms{
+    color:#fff;
+    font-size:18px;
+    font-family:FrutigerLTStd
+}
+.footer-menu li:first-child a,.footer-bottom-menu li:first-child a{
+    padding-left:0;
+}
+.copyright,.terms{
+    margin:0
+}
+.important-info{
+    text-transform: uppercase;
+    color:#fff;
+    font-size:13px;
+    font-family: FrutigerLTStd;
+    margin:0
+}
+.footer-soc-icons a span{
+    color:#fff;
+    font-size:35px;
+    margin-left:25px;
+}
+.footer-soc-icons-block{
+    padding:45px 0;
+}
+.important-about-cruise{
+    font-size: 13px;
+    color:#ccc;
+    padding-top:35px;
+}
+.footer-bottom{
+    background: #fff;
+    padding:25px 0;
+}
+.footer-bottom-menu li a{
+    color:#000;
+    text-decoration: underline;
+    font-size:13px;
+}
+.footer-bottom-copyright{
+    font-size:13px;
+    color:#000;
+
+}
